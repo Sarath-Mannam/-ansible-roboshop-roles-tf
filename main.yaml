@@ -1,0 +1,6 @@
+# Ansible automatically loads main.yml in the roles
+- name: Installing Roboshop project
+  hosts: localhost  # Pull is always executed on localhost
+  become: yes
+  roles:
+  - "{{component}}"
