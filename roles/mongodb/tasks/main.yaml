@@ -10,7 +10,7 @@
     dest: /tmp/catalogue.js
 
 - name: Install MongoDB
-  ansible.builtin.yum:  # this is the module to install mongodb
+  ansible.builtin.yum:  
     name: mongodb-org
     state: installed
 
